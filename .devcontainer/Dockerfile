@@ -10,4 +10,4 @@ RUN echo "\{\r\n\
     \"AzureWebJobsStorage\": \"UseDevelopmentStorage=true\",\r\n\
     \"FUNCTIONS_WORKER_RUNTIME\": \"powershell\"\r\n\
   }\r\n\
-}" > local.settings.json
+}" > /home/vscode/workspace/dataverse-ad-user-sync-powershell-azure-function/local.settings.json
