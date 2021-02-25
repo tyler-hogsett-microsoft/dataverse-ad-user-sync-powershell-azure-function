@@ -23,6 +23,7 @@
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "dotnet restore",
+	"postCreateCommand": "echo \"{\\\n  \\\"IsEncrypted\\\": false,\\\n  \\\"Values\\\": {\\\n    \\\"AzureWebJobsStorage\\\": \\\"UseDevelopmentStorage=true\\\",\\\n    \\\"FUNCTIONS_WORKER_RUNTIME\\\": \\\"powershell\\\"\\\n  }\\\n}\" > local.config.json",
 	
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
