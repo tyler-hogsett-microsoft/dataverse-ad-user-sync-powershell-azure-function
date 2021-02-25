@@ -1,0 +1,20 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "command": "azurite --silent --location c:\\azurite --debug azurite.log",
+      "label": "Run_Azurite",
+      "isBackground": true
+    },
+    {
+      "type": "func",
+      "command": "host start",
+      "problemMatcher": "$func-powershell-watch",
+      "isBackground": true,
+      "dependsOn": [
+        "Run_Azurite"
+      ]
+    }
+  ]
+}
